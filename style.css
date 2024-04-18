@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #151618;
+    color: tomato;
+
+    .main-container {
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: monospace;
+        font-size: 3rem;
+
+        .child {
+            padding: 50px;
+            box-shadow: 2px 2px 5px 3px black;
+            border-radius: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-shadow: 1px 1px 15px tomato;
+
+            .two {
+                rotate: calc(180deg);
+                transform: rotateY(180deg);
+                background-image: linear-gradient(360deg, tomato, black);
+                opacity: 0.7;
+                text-shadow: none;
+                background-clip: text;
+                color: transparent;
+            }
+        }
+    }
+}
